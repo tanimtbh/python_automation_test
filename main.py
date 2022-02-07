@@ -1,15 +1,9 @@
 import time
-import git
-import os
 
 
 while True:
     try:
-        repo = git.Repo(os.getcwd())
-        current = repo.head.commit
-        repo.remotes.origin.pull()
-        if current != repo.head.commit:
-            print("changed found")
+        import our_test
     except:
         print("Something wrong")
     finally:
