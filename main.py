@@ -15,5 +15,5 @@ while True:
     finally:
         print("Yahoo from abba Tanim from finally")
     
-    time.sleep(2.4)
+    time.sleep(20)
     
