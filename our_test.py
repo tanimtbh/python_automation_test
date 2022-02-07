@@ -1,7 +1,7 @@
 import git
 import os
 def test():
-    print("yaya")
+    print("changed")
     repo = git.Repo(os.getcwd())
     current = repo.head.commit
     repo.remotes.origin.pull()
