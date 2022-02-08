@@ -5,7 +5,7 @@ while True:
     try:
         from our_test import test
         test()
-        del test()
+        del test
     except:
         print("Something wrong")
     finally:
