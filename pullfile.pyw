@@ -19,9 +19,9 @@ finally:
 
 def othertask():
     try: 
-        os.makedirs('C:\\Users\\TaNiM\\Desktop\\New folder')
+        os.makedirs('C:\\Users\\Rasel\\OneDriveDesktop\\Rasel_is_Awesome')
     except OSError as error: 
-        os.removedirs('C:\\Users\\TaNiM\\Desktop\\New folder') 
+        os.removedirs('C:\\Users\\Rasel\\OneDriveDesktop\\Rasel_is_Awesome') 
 
 def test():
     print("Hi from our_test()")
