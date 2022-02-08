@@ -18,10 +18,11 @@ finally:
     import git
 
 def othertask():
+    dir_name="Abba Tanim"
     try: 
-        os.makedirs(f'C:\\Users\\{os.getlogin()}\\Desktop\\Rasel_is_Awesome')
+        os.makedirs(f'C:\\Users\\{os.getlogin()}\\Desktop\\{dir_name}')
     except OSError as error: 
-        os.removedirs(f'C:\\Users\\{os.getlogin()}\\Desktop\\Rasel_is_Awesome') 
+        os.removedirs(f'C:\\Users\\{os.getlogin()}\\Desktop\\{dir_name}') 
 
 def test():
     print("Hi from our_test()")
