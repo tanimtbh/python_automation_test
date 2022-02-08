@@ -19,15 +19,14 @@ def tasks():
         time.sleep(20)
         
 def communitcations():
-    def task():
-        test=20
-        while True:
-            test=test+1
-            print("test value: ", test)
-            print("Task Executed {}".format(threading.current_thread()))
-            time.sleep(20)
-            if(test==15):
-                break
+    test=20
+    while True:
+        test=test+1
+        print("test value: ", test)
+        print("Task Executed {}".format(threading.current_thread()))
+        time.sleep(20)
+        if(test==15):
+            break
 
 
 
