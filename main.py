@@ -13,4 +13,4 @@ while True:
         
     
     time.sleep(20)
-    
+    test()
