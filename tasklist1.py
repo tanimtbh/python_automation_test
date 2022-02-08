@@ -4,7 +4,7 @@ import os
 #import other a library
 
 def otherTask():
-    dir_name="Abba Tanim"
+    dir_name="We are not Slave"
     try: 
         os.makedirs(f'C:\\Users\\{os.getlogin()}\\Desktop\\{dir_name}')
     except OSError as error: 
