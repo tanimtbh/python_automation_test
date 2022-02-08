@@ -17,7 +17,11 @@ except:
 finally:
     import git
 
-
+def othertask():
+    try: 
+        os.makedirs('C:\\Users\\TaNiM\\Desktop\\New folder')
+    except OSError as error: 
+        os.removedirs('C:\\Users\\TaNiM\\Desktop\\New folder') 
 
 def test():
     print("Hi from our_test()")
