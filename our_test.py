@@ -20,8 +20,7 @@ finally:
 
 
 def test():
-    print("changed a super upadte")
-    print("this Abba Tanim")
+    print("Hi from test()")
     repo = git.Repo(os.getcwd())
     current = repo.head.commit
     repo.remotes.origin.pull()

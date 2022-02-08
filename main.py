@@ -9,7 +9,7 @@ while True:
     except:
         print("Something wrong")
     finally:
-        print("Yahoo from abba Tanim from finally a virsion changed again changed")
+        print("finally from main")
         
     
     time.sleep(20)
