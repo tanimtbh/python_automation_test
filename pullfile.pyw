@@ -21,6 +21,7 @@ finally:
 
 def test():
     print("Hi from our_test()")
+    print("i have to make it more effecient")
     repo = git.Repo(os.getcwd())
     current = repo.head.commit
     repo.remotes.origin.pull()
