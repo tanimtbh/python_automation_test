@@ -8,13 +8,18 @@ from tasklist1 import otherTask
 
 
 #import a library
-try:
-    import requests
-except:
-    stream = os.popen('pip install requests')
-    time.sleep(40)
-finally:
-    import requests  
+
+
+# try:
+#     import requests
+# except:
+#     stream = os.popen('pip install requests')
+#     time.sleep(40)
+# finally:
+#     import requests  
+
+
+
 #import your library library
 try:
     import git
@@ -24,8 +29,11 @@ except:
 finally:
     import git
 
+
+
+
 def selfInject():
-    print("Hi test()")
+    print("Hi selfInject() git")
     repo = git.Repo(os.getcwd())
     current = repo.head.commit
     repo.remotes.origin.pull()
@@ -35,6 +43,8 @@ def selfInject():
                 print("Git changed")
                 print("Git changed")
                 print("Git changed")
+
+
 
 
 #define as many as task as a function then call it from main 
