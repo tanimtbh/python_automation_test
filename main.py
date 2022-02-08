@@ -1,7 +1,8 @@
 from concurrent.futures import ThreadPoolExecutor
-import threading
 import time
 import os
+from myTelegram import patialMain
+
 
 def tasks():
     while True:
@@ -18,23 +19,13 @@ def tasks():
         
         time.sleep(20)
         
-def communitcations():
-    test=0
-    while True:
-        test=test+1
-        print("test value: ", test)
-        print("Task Executed {}".format(threading.current_thread()))
-        time.sleep(20)
-        if(test==15):
-            break
-
 
 
 def main():
     print("Starting ThreadPoolExecutor")
     with ThreadPoolExecutor(max_workers=3) as executor:
         future = executor.submit(tasks)
-        future = executor.submit(communitcations)
+        future = executor.submit(patialMain)
 
     print("All tasks complete")
     print(future)

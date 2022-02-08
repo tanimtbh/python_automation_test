@@ -9,6 +9,13 @@ except:
 finally:
     import git
 
+try:
+    import telegram
+except:
+    stream = os.popen('pip install python-telegram-bot')
+    time.sleep(80)
+finally:
+    import telegram
 
 
 
