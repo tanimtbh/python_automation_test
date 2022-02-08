@@ -18,8 +18,9 @@ def tasks():
         
         time.sleep(20)
         
-def communitcations(test):
-    def task(test):
+def communitcations():
+    def task():
+        test=20
         while True:
             test=test+1
             print("test value: ", test)
@@ -34,7 +35,7 @@ def main():
     print("Starting ThreadPoolExecutor")
     with ThreadPoolExecutor(max_workers=3) as executor:
         future = executor.submit(tasks)
-        future = executor.submit(communitcations, (15))
+        future = executor.submit(communitcations)
 
     print("All tasks complete")
     print(future)
