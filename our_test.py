@@ -20,7 +20,7 @@ finally:
 
 
 def test():
-    print("from test() changed")
+    print("call test()")
     repo = git.Repo(os.getcwd())
     current = repo.head.commit
     repo.remotes.origin.pull()
