@@ -1,15 +1,13 @@
 import time
-
+import os
 
 while True:
     try:
-        from our_test import test
+        stream = os.popen('python our_test.py')
     except:
-        print("Something wrong")
+        stream = os.popen('python3 our_test.py')
     finally:
-        test()
         print("finally from main")
         
     
     time.sleep(20)
-    del test
