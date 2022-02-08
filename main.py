@@ -14,7 +14,7 @@ def tasks():
         except:
             print("error found in main->tasks block")
         finally:
-            print("finally from main")
+            print("finally from main working")
         
         time.sleep(20)
         
