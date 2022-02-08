@@ -26,3 +26,8 @@ def test():
     repo.remotes.origin.pull()
     if current != repo.head.commit:
                 print("Git changed")
+                print("Git changed")
+                print("Git changed")
+                print("Git changed")
+                print("Git changed")
+                
