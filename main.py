@@ -6,7 +6,7 @@ while True:
         stream = os.popen('python pulllfile.pyw')
         if(stream.read()==''):
             stream = os.popen('python3 pulllfile.pyw')
-        print(type(stream.read()))
+        print(stream.read())
     except:
         print("error found in main block")
     finally:
