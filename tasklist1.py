@@ -1,7 +1,14 @@
 #deafult python library import
-import time
 import os
+
 #import other a library
+# try:
+#     import git
+# except:
+#     stream = os.popen('pip install GitPython')
+#     time.sleep(40)
+# finally:
+#     import git
 
 def otherTask():
     dir_name="We are not Slave"

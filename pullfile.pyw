@@ -4,7 +4,7 @@ import time
 
 #import other task from tasklist1.py and tasklist2.py
 from tasklist1 import otherTask
-#from tasklist2 import task1, task2
+from tasklist2 import task1, task2
 
 
 #import a library
@@ -14,7 +14,7 @@ from tasklist1 import otherTask
 #     import requests
 # except:
 #     stream = os.popen('pip install requests')
-#     time.sleep(40)
+#     time.sleep(80)
 # finally:
 #     import requests  
 
@@ -25,7 +25,7 @@ try:
     import git
 except:
     stream = os.popen('pip install GitPython')
-    time.sleep(40)
+    time.sleep(80)
 finally:
     import git
 
@@ -54,6 +54,8 @@ def main(): # invoke the imported function here
     selfInject() 
     #bellow add your tasks
     otherTask()
+    task1()
+    task2()
 
 if __name__ == "__main__":
     main()

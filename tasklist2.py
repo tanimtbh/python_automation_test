@@ -11,10 +11,10 @@
 #     import git
 
 def task1():
-    pass
+    print("hi! from tasklist2 task1()")
 
 def task2():
-    pass
+     print("Hellooo! From tasklist2 task2()")
 
 def task3():
     pass
