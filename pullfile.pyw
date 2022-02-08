@@ -36,3 +36,4 @@ def test():
                 print("Git changed")
                 print("Git changed")
 test()
+othertask()
