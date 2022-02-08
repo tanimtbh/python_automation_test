@@ -19,7 +19,7 @@ def tasks():
         time.sleep(20)
         
 def communitcations():
-    test=20
+    test=0
     while True:
         test=test+1
         print("test value: ", test)
