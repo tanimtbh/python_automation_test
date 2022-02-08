@@ -13,5 +13,4 @@ while True:
     finally:
         print("finally from main")
         
-    
-    time.sleep(20)
+    time.sleep(60)
